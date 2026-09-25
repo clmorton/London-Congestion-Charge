@@ -1,0 +1,31 @@
+                          Estimate Std. Error   t value   Pr(>|t|)    
+Time_to_treat::-1:Buffer -0.008064   0.014042 -0.574296 5.6613e-01    
+Time_to_treat::-2:Buffer -0.000268   0.017319 -0.015456 9.8768e-01    
+Time_to_treat::-3:Buffer -0.030935   0.020769 -1.489467 1.3724e-01    
+Time_to_treat::1:Buffer  -0.010169   0.011835 -0.859197 3.9081e-01    
+Time_to_treat::2:Buffer  -0.082141   0.017674 -4.647681 4.7261e-06 ***
+Time_to_treat::3:Buffer  -0.095941   0.024886 -3.855218 1.3705e-04 ***
+
+                          Estimate Std. Error   t value   Pr(>|t|)    
+Time_to_treat::-1:Buffer -0.005316   0.010501 -0.506230 6.1287e-01    
+Time_to_treat::-2:Buffer -0.001507   0.012927 -0.116565 9.0724e-01    
+Time_to_treat::-3:Buffer -0.016469   0.014973 -1.099878 2.7181e-01    
+Time_to_treat::1:Buffer  -0.001852   0.009740 -0.190111 8.4928e-01    
+Time_to_treat::2:Buffer  -0.074275   0.013194 -5.629576 2.7219e-08 ***
+Time_to_treat::3:Buffer  -0.066130   0.019037 -3.473675 5.4858e-04 ***
+
+                          Estimate Std. Error   t value   Pr(>|t|)    
+Time_to_treat::-1:Buffer  0.003777   0.009068  0.416579 6.7709e-01    
+Time_to_treat::-2:Buffer  0.009475   0.011247  0.842390 3.9980e-01    
+Time_to_treat::-3:Buffer -0.005814   0.013198 -0.440482 6.5970e-01    
+Time_to_treat::1:Buffer  -0.009683   0.008696 -1.113445 2.6583e-01    
+Time_to_treat::2:Buffer  -0.078972   0.011782 -6.702599 3.6824e-11 ***
+Time_to_treat::3:Buffer  -0.073460   0.016326 -4.499527 7.7372e-06 ***
+
+                          Estimate Std. Error   t value   Pr(>|t|)    
+Time_to_treat::-1:Buffer  0.005103   0.008069  0.632414 5.2725e-01    
+Time_to_treat::-2:Buffer  0.012242   0.010277  1.191135 2.3385e-01    
+Time_to_treat::-3:Buffer -0.002014   0.011838 -0.170113 8.6495e-01    
+Time_to_treat::1:Buffer  -0.012316   0.007787 -1.581607 1.1402e-01    
+Time_to_treat::2:Buffer  -0.083306   0.011010 -7.566445 8.0241e-14 ***
+Time_to_treat::3:Buffer  -0.072422   0.015265 -4.744237 2.3653e-06 ***
