@@ -1,0 +1,69 @@
+***Notes from Analysis
+
+***Buffer Calculation
+Use of four buffers - 1000m, 750m, 500m, 250m
+
+***Demographic Census Data Used
+Resident population 
+Number of Households
+Car availability
+Level of education
+Economic Status
+Travel to work distance
+
+Datasets have been duplicated to retain meta data in original files
+
+2001 census data had a mix of old and new area reference codes which i cleaned using VLOOKUP in Excel
+
+***London Boroughs within LCC Buffers
+Camden
+Islington
+Hackney
+Tower Hamlets
+Southwark
+Westminster
+Kensington and Chelsea
+
+***Census Comparisons
+There are some suitable differences between the 2001 and 2011 census
+  Qualification - no apprenticeship in 2001
+  NS_Sec - slight difference as size of company not considered in 2011
+
+***Cesnsus Area Dummies
+Areas are classified 'in' a certain buffer if they intersect or are within
+Used if( is_selected(), 1, 0) command in QGIS
+
+***Analysis Plan
+1. Car ownership map for London
+2. Chart of distance decay
+3. Chart of car onwership over time (London, Treatment, and Control)
+4. Comparison between treatment and control for demographics and car ownership
+5. % reduction in car ownership 2001 - 2005
+6. DiD
+
+**LCC Timeline
+1999 - Greater London Authority Act provides mayor with power to introduce Road User Charging
+2000 - Ken Livingstone elected as mayor with congestion charging part of manifesto
+2003 - February LCC introduced at £5 per day
+2005 - Fee increased to £8
+2007 - Feb western extension introduced
+2011 - Jan wester extension removed
+
+**Spatial Regression Models
+For the models, I needed to remove some observations:
+    E00023812 & E00022974 - are neighbourless, which causes problems for the creating of the spatial weights matrix
+    
+**Spatial Weights Issue
+There are a few different ways to create spatial weights, [1] contiguity, [2] distance, [3] K-nearest
+For distance, the minimum bandwidth to ensure no neighbourless cases is 555.009860
+K-nearest based on the mode number from contiguity, being 4
+Binary spatial weights are also being created 
+
+**Updates implemented as a result of reviewer comments
+1. Event study analysis now implmented to provide further evidence on the parallel trend assumption
+2. Western extension analysis now conducted - unsuitable for inclusion given circumstances of the policy, but conducted for completeness
+3. Two way fixed effects models now used as a baseline before spatial extensions
+4. Differnt forms of spatial weights now used, covering distance, contiguity, and k-nearest
+
+
+
